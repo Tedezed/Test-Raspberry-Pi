@@ -31,5 +31,9 @@ try:
 		time.sleep(1)
 
 except KeyboardInterrupt:
+	print 'centro'
+	p.ChangeDutyCycle(6.5)
+	time.sleep(1)
+
 	p.stop()
 	GPIO.cleanup()
