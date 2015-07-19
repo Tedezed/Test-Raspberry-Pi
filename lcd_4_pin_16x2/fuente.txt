@@ -1,0 +1,2 @@
+1 - http://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi/
+2 - http://www.rpiblog.com/2012/07/interfacing-16x2-lcd-with-raspberry-pi.html
