@@ -20,8 +20,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import smbus
 from time import *
 
-BackLight = True   # LCD backlight enable
-
 # General i2c device class so that other devices can be added easily
 class i2c_device:
 	def __init__(self, addr, port):
@@ -29,10 +27,6 @@ class i2c_device:
 		self.bus = smbus.SMBus(port)
 
 	def write(self, byte):
-		if (BackLight == False):
-			byte = byte & 0x7F # switch off backlight LED
-		else:
-			byte = byte | 0x80 # switch on backlight LED
 		self.bus.write_byte(self.addr, byte)
 
 	def read(self):
