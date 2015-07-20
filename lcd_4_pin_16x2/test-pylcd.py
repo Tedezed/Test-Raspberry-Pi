@@ -1,5 +1,5 @@
 import pylcd
-lcd = pylcd.lcd(0x3f,1)
+lcd = pylcd.lcd(0x3f,1,1)
 
 #Line 1
 lcd.lcd_puts("RaspberryPi",1)
