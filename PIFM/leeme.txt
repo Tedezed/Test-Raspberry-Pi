@@ -1,0 +1,15 @@
+Fuente: http://omattos.com/pifm.tar.gz
+
+Dependencias:
+sudo apt–get install ffmpeg -ym
+sudo apt-get install mpg321
+sudo apt-get install mpg123
+
+Antena en GPIO 4
+
+Comando WAV:
+sudo ./pifm sound.wav 87.5
+
+Comando MP3:
+sudo ffmpeg -i sound.mp3 -f s16le -ar 22.05k -ac 1 - | sudo ./pifm - 87.5 22050
+
